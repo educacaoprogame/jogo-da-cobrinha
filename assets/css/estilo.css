@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  bpox-sizing: border-box;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.titulo {
+  font-size: 30pt;
+  font-family: 'VT323', monospace;
+  margin-block: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.game-area {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: rgba(131,58,180,1) ;
+  margin: 0 auto;
+  border: 8px solid rgba(252,176,69,1);
+  border-radius: 4px;
+}
+
+#snake {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+#food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: orange ;
+  border-radius: 50%;
+}
